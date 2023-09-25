@@ -17,6 +17,7 @@ html {
 
 p {
   color: goldenrod;
+  text-align: center;
 }
 
 /* Transition */
@@ -151,7 +152,7 @@ a:hover {
 .section {
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -268,7 +269,7 @@ a:hover {
 
 #about {
   position: relative;
-  margin-bottom: 6rem;
+  margin-bottom: 10rem;
 }
 
 .about-containers {
@@ -291,11 +292,14 @@ a:hover {
   border-radius: 4rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .details-container {
   padding-left: -1.5rem;
   padding-right: 5rem;
+  flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(55, 55, 55) 0.1rem solid;
@@ -324,13 +328,14 @@ a:hover {
 
 #experience {
   position: relative;
+  margin-bottom: 10rem;
 }
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
@@ -350,11 +355,103 @@ a:hover {
 
 article {
   display: flex;
-  width: 10rem;
+  width: 15rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
 
 article .icon {
   cursor: default;
+}
+
+/* Projects Section */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  width: 70%;
+  height: 70%;
+  margin-top: 2rem;
+}
+
+.project-title {
+  margin: 1rem;
+  color: rgb(93, 143, 69);
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  right: 1rem;
+  bottom: -3rem;
+}
+
+/* Contact Section */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.contact-info-container {
+  font-size: larger;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* Footer Section */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
